@@ -3,6 +3,8 @@ package ru.gorbulevsv.myapplication;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -22,11 +24,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     DrawerLayout drawerLayout;
     Toolbar toolbar;
     NavigationView navigationView;
+    WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        webView = findViewById(R.id.webView);
+        webView.setWebViewClient(new WebViewClient());
+        webView.getSettings().setJavaScriptEnabled(true);
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(findViewById(R.id.toolbar));
@@ -36,7 +43,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-        //drawerLayout.addDrawerListener(this);
 
         navigationView = findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -56,8 +62,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        getSupportActionBar().setTitle(menuItem.toString());
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        getSupportActionBar().setTitle(item.toString());
+        if (item.getItemId() == R.id.nav_camera) {
+            webView.loadUrl("https://ya.ru");
+        } else if (item.getItemId() == R.id.nav_gallery) {
+            webView.loadUrl("https://www.youtube.com/");
+        }
+
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
