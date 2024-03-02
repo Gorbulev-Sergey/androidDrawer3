@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">androidDrawer3</string>
+    <string name="navigation_drawer_open">Открыт</string>
+    <string name="navigation_drawer_close">Закрыт</string>
+    <string name="menu_camera">Камера</string>
+    <string name="menu_gallery">Галерея</string>
+    <string name="menu_camera2">Связь</string>
+    <string name="menu_gallery2">Расписание</string>
+    <string name="menu_group">Второе меню</string>
+</resources>
