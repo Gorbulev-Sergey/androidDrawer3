@@ -70,10 +70,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         getSupportActionBar().setTitle(item.toString());
-        if (item.getItemId() == R.id.nav_camera) {
-            webView.loadUrl("https://ya.ru");
-        } else if (item.getItemId() == R.id.nav_gallery) {
-            webView.loadUrl("https://www.youtube.com/");
+        if (item.getItemId() == R.id.menuMorning) {
+            webView.loadUrl("https://molitvoslovonline.ru/utrennie-molitvy/");
+        } else if (item.getItemId() == R.id.menuEvening) {
+            webView.loadUrl("https://molitvoslovonline.ru/molitvy-na-son-gryadushchim/");
+        } else if (item.getItemId() == R.id.menuCanonLord) {
+            webView.loadUrl("https://molitvoslovonline.ru/molitvy-na-son-gryadushchim/");
+        } else if (item.getItemId() == R.id.menuCanonGodMother) {
+            webView.loadUrl("https://molitvoslovonline.ru/molitvy-na-son-gryadushchim/");
+        } else if (item.getItemId() == R.id.menuCanonAngel) {
+            webView.loadUrl("https://molitvoslovonline.ru/molitvy-na-son-gryadushchim/");
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);
