@@ -1,12 +1,19 @@
 <resources>
-    <string name="app_name">androidDrawer3</string>
+    <string name="app_name">Молитвослов</string>
     <string name="navigation_drawer_open">Открыт</string>
     <string name="navigation_drawer_close">Закрыт</string>
 
 
-    <string name="menuMorning">1. Утренние молитвы</string>
-    <string name="menuEvening">2. Вечерние молитвы</string>
-    <string name="menuCanonLord">3. Канон Господу Иисусу Христу</string>
-    <string name="menuCanonGodMother">4. Канон Пресвятой Богородице</string>
-    <string name="menuCanonAngel">5. Канон Ангелу Хранителю</string>
+    <string name="menuMorning">Молитвы утренние</string>
+    <string name="menuEvening">Молитвы на сон грядущим</string>
+    <string name="menuCanonLord">Канон покаянный ко Господу нашему Иисусу Христу</string>
+    <string name="menuCanonGodMother">Канон молебный ко Пресвятой Богородице</string>
+    <string name="menuCanonAngel">Канон Ангелу Хранителю</string>
+    <string name="menuAkafistLord">Акафист Сладчайшему Господу нашему Иисусу Христу</string>
+    <string name="menuAkafistGodMother">Акафист Пресвятой Богородице</string>
+    <string name="menuAkafistNikolay">Акафист святителю Николаю</string>
+    <string name="menuBeforPrichastie">Последование ко Святому Причащению</string>
+    <string name="menuAfterPrichastie">Благодарственные молитвы по Святом Причащении</string>
+    <string name="menuPashaTimes">Часы Святой Пасхи</string>
+    <string name="menuVoiny">Молитвы за воинов</string>
 </resources>
