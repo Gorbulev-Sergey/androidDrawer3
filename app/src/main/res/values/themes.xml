@@ -1,17 +1,24 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.AndroidDrawer3" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Base.Theme.AndroidMolitvoslov" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/purple_700</item>
         <item name="colorPrimaryDark">@color/purple_200</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="toolbarStyle">@style/Widget.MaterialComponents.Toolbar.PrimarySurface</item>
-        <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowStyle</item>
+        <item name="drawerArrowStyle">@style/Theme.DrawerArrowStyle</item>
     </style>
 
-    <style name="AppTheme.DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
-        <item name="color">@android:color/white</item>
-        <item name="android:textSize">30dp</item>
+    <style name="Theme.DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="backgroundColor">@android:color/white</item>
     </style>
 
-    <style name="Theme.AndroidDrawer3" parent="Theme.Material3.DayNight.NoActionBar" />
+    <style name="Theme.AndroidMolitvoslov" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+
+    <style name="Theme.Text" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:textSize">21dp</item>
+        <item name="color">@color/white</item>
+        <item name="fontWeight">900</item>
+        <item name="android:maxLines">3</item>
+    </style>
 </resources>

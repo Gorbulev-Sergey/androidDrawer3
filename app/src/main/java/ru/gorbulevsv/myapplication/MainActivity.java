@@ -5,6 +5,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -71,15 +75,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         getSupportActionBar().setTitle(item.toString());
         if (item.getItemId() == R.id.menuMorning) {
-            webView.loadUrl("https://molitvoslovonline.ru/utrennie-molitvy/");
+            webView.loadUrl("file:///android_asset/1.html");
         } else if (item.getItemId() == R.id.menuEvening) {
-            webView.loadUrl("https://molitvoslovonline.ru/molitvy-na-son-gryadushchim/");
+            webView.loadUrl("file:///android_asset/2.html");
         } else if (item.getItemId() == R.id.menuCanonLord) {
-            webView.loadUrl("https://molitvoslovonline.ru/molitvy-na-son-gryadushchim/");
+            webView.loadUrl("file:///android_asset/3.html");
         } else if (item.getItemId() == R.id.menuCanonGodMother) {
-            webView.loadUrl("https://molitvoslovonline.ru/molitvy-na-son-gryadushchim/");
+            webView.loadUrl("file:///android_asset/4.html");
         } else if (item.getItemId() == R.id.menuCanonAngel) {
-            webView.loadUrl("https://molitvoslovonline.ru/molitvy-na-son-gryadushchim/");
+            webView.loadUrl("file:///android_asset/5.html");
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);

@@ -7,51 +7,39 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/menuMorning"
-            android:icon="@drawable/ic_pagelines"
             android:title="@string/menuMorning" />
         <item
             android:id="@+id/menuEvening"
-            android:icon="@drawable/ic_pagelines"
             android:title="@string/menuEvening" />
         <item
             android:id="@+id/menuCanonLord"
-            android:icon="@drawable/ic_pagelines"
             android:title="@string/menuCanonLord" />
         <item
             android:id="@+id/menuCanonGodMother"
-            android:icon="@drawable/ic_pagelines"
             android:title="@string/menuCanonGodMother" />
         <item
             android:id="@+id/menuCanonAngel"
-            android:icon="@drawable/ic_pagelines"
             android:title="@string/menuCanonAngel" />
         <item
             android:id="@+id/menuAkafistLord"
-            android:icon="@drawable/ic_pagelines"
             android:title="@string/menuAkafistLord" />
         <item
             android:id="@+id/menuAkafistGodMother"
-            android:icon="@drawable/ic_pagelines"
             android:title="@string/menuAkafistGodMother" />
         <item
             android:id="@+id/menuAkafistNikolay"
-            android:icon="@drawable/ic_pagelines"
             android:title="@string/menuAkafistNikolay" />
         <item
             android:id="@+id/menuBeforPrichastie"
-            android:icon="@drawable/ic_pagelines"
             android:title="@string/menuBeforPrichastie" />
         <item
             android:id="@+id/menuAfterPrichastie"
-            android:icon="@drawable/ic_pagelines"
             android:title="@string/menuAfterPrichastie" />
         <item
             android:id="@+id/menuPashaTimes"
-            android:icon="@drawable/ic_pagelines"
             android:title="@string/menuPashaTimes" />
         <item
             android:id="@+id/menuVoiny"
-            android:icon="@drawable/ic_pagelines"
             android:title="@string/menuVoiny"/>
     </group>
 </menu>
