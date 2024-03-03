@@ -17,12 +17,15 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:titleTextAppearance="@style/Theme.Text"/>
+            android:background="?colorPrimary"
+            app:titleTextAppearance="@style/Theme.Text"
+            app:titleTextColor="?colorOnPrimary" />
 
         <WebView
             android:id="@+id/webView"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
@@ -33,8 +36,9 @@
         android:layout_marginEnd="-65dp"
         android:layout_marginRight="-65dp"
         android:fitsSystemWindows="true"
-        app:itemMaxLines="3"
         app:headerLayout="@layout/drawer_header"
+        app:itemMaxLines="3"
+        app:itemShapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Nav"
         app:menu="@menu/activity_home_navigation_drawer" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
